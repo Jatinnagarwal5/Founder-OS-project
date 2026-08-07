@@ -8,14 +8,17 @@ FounderOS is a production-quality executive operating system that connects finan
 
 ## 🎬 Live Demo & Interface Screenshots
 
-### Executive Telemetry Dashboard
-![Executive Dashboard](file:///Users/jatinnagarwal5/.gemini/antigravity-ide/brain/38235c2a-f257-48cf-bf50-dd6121571a62/dashboard_full_1786104650422.png)
+### 📹 Live Operating Demo
+![FounderOS & AutoFlow AI Live Demo](./public/assets/founderos_live_demo.webp)
 
-### AutoFlow AI – Workflow Automation Advisor
-![AutoFlow AI Suite](file:///Users/jatinnagarwal5/.gemini/antigravity-ide/brain/38235c2a-f257-48cf-bf50-dd6121571a62/autoflow_full_1786104708881.png)
+### 📊 Executive Telemetry Dashboard
+![Executive Telemetry Dashboard](./public/assets/dashboard_full.png)
 
-### AI Multi-Agent Advisory Suite
-![AI Advisor Interaction](file:///Users/jatinnagarwal5/.gemini/antigravity-ide/brain/38235c2a-f257-48cf-bf50-dd6121571a62/advisor_interaction_1786104684028.png)
+### ⚡ AutoFlow AI – Workflow Automation Advisor
+![AutoFlow AI Suite](./public/assets/autoflow_full.png)
+
+### 🤖 AI Multi-Agent Advisory Suite
+![AI Multi-Agent Advisory](./public/assets/advisor_interaction.png)
 
 ---
 
@@ -111,6 +114,8 @@ npm run start
 
 ```
 Founder-OS-project/
+├── public/
+│   └── assets/               # Demo WebP recording & frontend screenshots
 ├── src/
 │   ├── app/
 │   │   ├── action-plan/      # Interactive Task Manager
