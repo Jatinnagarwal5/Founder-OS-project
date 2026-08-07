@@ -11,14 +11,9 @@ FounderOS is a production-quality executive operating system that connects finan
 ### 📹 Live Operating Demo
 ![FounderOS & AutoFlow AI Live Demo](./public/assets/founderos_live_demo.webp)
 
-### 📊 Executive Telemetry Dashboard
-![Executive Telemetry Dashboard](./public/assets/dashboard_full.png)
 
 ### ⚡ AutoFlow AI – Workflow Automation Advisor
 ![AutoFlow AI Suite](./public/assets/autoflow_full.png)
-
-### 🤖 AI Multi-Agent Advisory Suite
-![AI Multi-Agent Advisory](./public/assets/advisor_interaction.png)
 
 ---
 
