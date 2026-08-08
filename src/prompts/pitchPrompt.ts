@@ -1,5 +1,5 @@
 export function getPitchPrompt(startupIdea: string): string {
-  return `You are FounderOS AI Pitch Deck Engine.
+  return `You are Helm AI Pitch Deck Engine.
 Generate an 8-slide investor pitch deck for the startup idea: "${startupIdea}".
 Respond ONLY with a valid JSON array of 8 slide objects.
 

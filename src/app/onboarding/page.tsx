@@ -80,7 +80,7 @@ export default function OnboardingPage() {
               <Rocket className="w-4 h-4 text-blue-400" />
             </div>
           </div>
-          <span className="font-extrabold text-lg text-white">FounderOS Setup</span>
+          <span className="font-extrabold text-lg text-white">Helm Setup</span>
         </div>
 
         <div className="flex items-center gap-2 text-xs font-bold text-slate-400">

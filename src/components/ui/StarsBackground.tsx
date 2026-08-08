@@ -10,6 +10,7 @@ interface StarsBackgroundProps extends React.HTMLAttributes<HTMLDivElement> {
   pointerEvents?: boolean;
   mouseRadius?: number;
   repulsionForce?: number;
+  isFixed?: boolean;
 }
 
 interface Star {
@@ -26,12 +27,13 @@ interface Star {
 }
 
 export function StarsBackground({
-  factor = 0.08,
-  speed = 50,
-  starColor = "#e9d5ff",
+  factor = 0.12,
+  speed = 45,
+  starColor = "#ffffff",
   pointerEvents = true,
-  mouseRadius = 180,
-  repulsionForce = 2.5,
+  mouseRadius = 200,
+  repulsionForce = 3.0,
+  isFixed = false,
   className,
   children,
   ...props
@@ -42,7 +44,7 @@ export function StarsBackground({
   useEffect(() => {
     const canvas = canvasRef.current;
     const container = containerRef.current;
-    if (!canvas || !container) return;
+    if (!canvas) return;
 
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
@@ -57,15 +59,21 @@ export function StarsBackground({
     };
 
     const handleResize = () => {
-      if (!canvas || !container) return;
-      canvas.width = container.clientWidth || window.innerWidth;
-      canvas.height = container.clientHeight || window.innerHeight;
+      if (!canvas) return;
+      if (isFixed) {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      } else {
+        const parent = container || canvas.parentElement;
+        canvas.width = parent?.clientWidth || window.innerWidth;
+        canvas.height = parent?.clientHeight || window.innerHeight;
+      }
       initStars();
     };
 
     const initStars = () => {
       if (!canvas) return;
-      const count = Math.floor((canvas.width * canvas.height * factor) / 1000);
+      const count = Math.floor((canvas.width * canvas.height * factor) / 700);
       stars = Array.from({ length: count }, () => {
         const x = Math.random() * canvas.width;
         const y = Math.random() * canvas.height;
@@ -76,20 +84,25 @@ export function StarsBackground({
           baseY: y,
           vx: 0,
           vy: 0,
-          size: Math.random() * 2.0 + 0.4,
-          alpha: Math.random() * 0.8 + 0.2,
-          speed: (Math.random() * 0.35 + 0.1) * (speed / 50),
-          twinkleSpeed: Math.random() * 0.02 + 0.005,
+          size: Math.random() * 2.4 + 0.6,
+          alpha: Math.random() * 0.7 + 0.3,
+          speed: (Math.random() * 0.4 + 0.15) * (speed / 50),
+          twinkleSpeed: Math.random() * 0.025 + 0.008,
         };
       });
     };
 
     const handleMouseMove = (e: MouseEvent) => {
-      if (!container) return;
-      const rect = container.getBoundingClientRect();
-      mouse.x = e.clientX - rect.left;
-      mouse.y = e.clientY - rect.top;
-      mouse.active = true;
+      if (isFixed) {
+        mouse.x = e.clientX;
+        mouse.y = e.clientY;
+        mouse.active = true;
+      } else if (container) {
+        const rect = container.getBoundingClientRect();
+        mouse.x = e.clientX - rect.left;
+        mouse.y = e.clientY - rect.top;
+        mouse.active = true;
+      }
     };
 
     const handleMouseLeave = () => {
@@ -99,8 +112,15 @@ export function StarsBackground({
     };
 
     window.addEventListener("resize", handleResize);
-    container.addEventListener("mousemove", handleMouseMove);
-    container.addEventListener("mouseleave", handleMouseLeave);
+
+    if (isFixed) {
+      window.addEventListener("mousemove", handleMouseMove);
+      window.addEventListener("mouseleave", handleMouseLeave);
+    } else if (container) {
+      container.addEventListener("mousemove", handleMouseMove);
+      container.addEventListener("mouseleave", handleMouseLeave);
+    }
+
     handleResize();
 
     const render = () => {
@@ -115,16 +135,16 @@ export function StarsBackground({
           0,
           mouse.x,
           mouse.y,
-          mouseRadius * 0.8
+          mouseRadius * 0.85
         );
-        gradient.addColorStop(0, "rgba(168, 85, 247, 0.12)");
-        gradient.addColorStop(0.5, "rgba(59, 130, 246, 0.05)");
+        gradient.addColorStop(0, "rgba(168, 85, 247, 0.15)");
+        gradient.addColorStop(0.5, "rgba(59, 130, 246, 0.06)");
         gradient.addColorStop(1, "rgba(0, 0, 0, 0)");
 
         ctx.save();
         ctx.fillStyle = gradient;
         ctx.beginPath();
-        ctx.arc(mouse.x, mouse.y, mouseRadius * 0.8, 0, Math.PI * 2);
+        ctx.arc(mouse.x, mouse.y, mouseRadius * 0.85, 0, Math.PI * 2);
         ctx.fill();
         ctx.restore();
       }
@@ -184,23 +204,29 @@ export function StarsBackground({
 
     return () => {
       window.removeEventListener("resize", handleResize);
-      if (container) {
+      if (isFixed) {
+        window.removeEventListener("mousemove", handleMouseMove);
+        window.removeEventListener("mouseleave", handleMouseLeave);
+      } else if (container) {
         container.removeEventListener("mousemove", handleMouseMove);
         container.removeEventListener("mouseleave", handleMouseLeave);
       }
       cancelAnimationFrame(animationFrameId);
     };
-  }, [factor, speed, starColor, mouseRadius, repulsionForce]);
+  }, [factor, speed, starColor, mouseRadius, repulsionForce, isFixed]);
 
   return (
     <div
       ref={containerRef}
-      className={cn("relative w-full overflow-hidden", className)}
+      className={cn("relative w-full bg-[#09090b]", className)}
       {...props}
     >
       <canvas
         ref={canvasRef}
-        className="absolute inset-0 w-full h-full pointer-events-none z-0"
+        className={cn(
+          "pointer-events-none z-0",
+          isFixed ? "fixed inset-0 w-screen h-screen" : "absolute inset-0 w-full h-full"
+        )}
       />
       <div className="relative z-10">{children}</div>
     </div>

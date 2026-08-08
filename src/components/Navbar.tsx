@@ -33,6 +33,7 @@ export default function Navbar({ onMobileMenuToggle }: NavbarProps) {
   }, []);
 
   const searchItems = [
+    { title: "AutoFlow AI Suite", category: "AI Tools", href: "/" },
     { title: "Executive Dashboard", category: "Core OS", href: "/dashboard" },
     { title: "AI Founder Advisor Chat", category: "AI Tools", href: "/advisor" },
     { title: "Finance Telemetry & Burn Rate", category: "Metrics", href: "/finance" },
@@ -77,7 +78,7 @@ export default function Navbar({ onMobileMenuToggle }: NavbarProps) {
             </div>
             <div className="hidden sm:block">
               <div className="flex items-center gap-1.5">
-                <span className="font-extrabold text-base tracking-tight text-white">FounderOS</span>
+                <span className="font-extrabold text-base tracking-tight text-white">Helm</span>
                 <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-blue-500/20 text-blue-400 font-semibold border border-blue-500/30">
                   v2.0
                 </span>

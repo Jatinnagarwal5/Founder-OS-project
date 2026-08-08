@@ -200,7 +200,7 @@ export const defaultPitchDeck = [
   {
     slideNumber: 2,
     title: "Solution",
-    subtitle: "FounderOS – The Unified AI Co-Founder & Operating System",
+    subtitle: "Helm – The Unified AI Co-Founder & Operating System",
     content: [
       "Real-time financial telemetry & Founder Health Score meter (0-100).",
       "Specialized AI Agents (CEO, Marketing, Investor VC, Product Manager).",
@@ -226,7 +226,7 @@ export const defaultPitchDeck = [
     content: [
       "Legacy dashboards (Stripe/Linear) lack proactive AI strategic advice.",
       "ChatGPT lacks live business data context & financial telemetry integration.",
-      "FounderOS bridges live metrics with active Gemini 2.5 AI decision support.",
+      "Helm bridges live metrics with active Gemini 2.5 AI decision support.",
     ],
     highlight: "Proprietary Decision Simulation Engine gives 10x faster strategic clarity.",
   },
@@ -246,7 +246,7 @@ export const defaultPitchDeck = [
     title: "Go-To-Market Strategy",
     subtitle: "Product-Led Growth & Creator Partnerships",
     content: [
-      "Viral pitch deck & decision simulator exports with 'Powered by FounderOS' branding.",
+      "Viral pitch deck & decision simulator exports with 'Powered by Helm' branding.",
       "Partnerships with YC/Techstars accelerators, incubators, and founder communities.",
       "SEO & Founder build-in-public content engine.",
     ],
@@ -341,7 +341,7 @@ export const defaultActionPlan: ActionItem[] = [
   { id: "t2", title: "Review Q3 burn rate & cash runway with financial advisor", category: "Finance", priority: "High", completed: true },
   { id: "t3", title: "Test Gemini 2.5 Flash prompt responses for CEO Agent", category: "Product", priority: "Medium", completed: true },
   { id: "t4", title: "Launch interactive Landing Page MVP & gather signups", category: "Marketing", priority: "High", completed: false },
-  { id: "t5", title: "Draft Series A pitch deck using FounderOS generator", category: "Fundraising", priority: "High", completed: false },
+  { id: "t5", title: "Draft Series A pitch deck using Helm generator", category: "Fundraising", priority: "High", completed: false },
   { id: "t6", title: "Set up automated weekly investor update email report", category: "Operations", priority: "Medium", completed: false },
 ];
 

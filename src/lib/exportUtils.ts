@@ -89,7 +89,7 @@ export function exportInvestorReportPDF(startupData: StartupMetrics, title = "In
         </div>
 
         <div class="footer">
-          Confidential • FounderOS AI Telemetry Engine • Powered by Gemini 2.5 Flash
+          Confidential • Helm AI Telemetry Engine • Powered by Gemini 2.5 Flash
         </div>
 
         <script>

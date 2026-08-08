@@ -1,5 +1,5 @@
 export function getSimulatorPrompt(optionA: string, optionB: string, startupContext: string): string {
-  return `You are FounderOS AI Decision Simulator Engine. 
+  return `You are Helm AI Decision Simulator Engine. 
 Compare the following two strategic options for a startup and evaluate them objectively. 
 Respond ONLY with a valid, structured JSON object (no markdown, pure JSON).
 

@@ -1,4 +1,4 @@
-# 🏆 FounderOS v2.0 & AutoFlow AI – Hackathon Judging Screening Brief
+# 🏆 Helm v2.0 & AutoFlow AI – Hackathon Judging Screening Brief
 
 > **"An AI Weekly Operating Review & Workflow Automation Engine for Early-Stage SaaS Founders that turns raw financial metrics into clear priorities, ROI estimates, and autonomous pipelines."**
 
@@ -8,7 +8,7 @@
 
 Early-stage startup founders waste 30+ hours every week juggling fragmented dashboards (Stripe, Google Sheets, Notion, Zendesk, Zapier) and guessing strategic priorities. 
 
-**FounderOS v2.0 & AutoFlow AI** solves this problem by providing a **unified AI Operating System**:
+**Helm v2.0 & AutoFlow AI** solves this problem by providing a **unified AI Operating System**:
 1. **Financial Telemetry Ingestion Engine**: Connects live data (via Stripe CSV imports or manual telemetry) to compute MRR, Burn Rate, Runway, Churn, and MoM Growth.
 2. **AI Weekly Operating Review**: Uses **Google Gemini 2.5 Flash** to analyze connected numbers, explain *"What Changed & Why"*, and generate 3-4 top priorities with 1-click execution buttons.
 3. **AutoFlow AI Advisor**: A 20-section interactive workflow automation engine that identifies operational bottlenecks, calculates financial ROI with payback timelines, maps before-vs-after process flowcharts, and recommends optimal AI stacks (Zapier, Make.com, OpenAI, n8n).
@@ -16,9 +16,9 @@ Early-stage startup founders waste 30+ hours every week juggling fragmented dash
 
 ---
 
-## 🎯 5 Key Differentiators That Make FounderOS Win
+## 🎯 5 Key Differentiators That Make Helm Win
 
-| # | Feature / Innovation | Competitors / Chatbots | FounderOS & AutoFlow AI |
+| # | Feature / Innovation | Competitors / Chatbots | Helm & AutoFlow AI |
 |---|---|---|---|
 | 1 | **Data Grounding** | Gives generic advice ("Increase revenue") | References exact imported numbers (*"MRR fell 4.2% to $42.5k because churn hit 1.8%..."*) |
 | 2 | **Security & Privacy** | Exposes API keys in client UI | Strict server-side route handlers (`/api/...`) with zero client-side key exposure |
@@ -74,15 +74,15 @@ Early-stage startup founders waste 30+ hours every week juggling fragmented dash
 
 ## 🎙️ 2-Minute Pitch Script for Hackathon Judges
 
-> *"Hello Judges! Meets FounderOS & AutoFlow AI — the AI Operating System for early-stage SaaS founders.*
+> *"Hello Judges! Meet Helm & AutoFlow AI — the AI Operating System for early-stage SaaS founders.*
 >
 > *Early-stage founders spend over 30 hours a week on repetitive manual admin, spreadsheet data entry, and fragmented tools. Generic chatbots don't help because they give generic, ungrounded advice.*
 >
-> *FounderOS changes that. By importing live financial telemetry via CSV or Stripe, our platform uses **Gemini 2.5 Flash** to provide a data-grounded Weekly Operating Review. It cites your actual numbers — like 'MRR grew 14% to $42.5k while churn stayed low at 1.8%' — and gives you 4 actionable weekly priorities with 1-click task additions.*
+> *Helm changes that. By importing live financial telemetry via CSV or Stripe, our platform uses **Gemini 2.5 Flash** to provide a data-grounded Weekly Operating Review. It cites your actual numbers — like 'MRR grew 14% to $42.5k while churn stayed low at 1.8%' — and gives you 4 actionable weekly priorities with 1-click task additions.*
 >
 > *With our **AutoFlow AI** suite, founders can input any manual department workflow and instantly get a financial ROI calculation, an Automation Readiness Score, a Before vs After process map, and recommended AI tool stacks like Make.com, n8n, and Gemini.*
 >
-> *Built with Next.js 15, Tailwind dark glassmorphism, Recharts, and strict server-side Gemini key isolation, FounderOS turns chaotic startup data into clear, execution-ready priorities. Thank you!"*
+> *Built with Next.js 15, Tailwind dark glassmorphism, Recharts, and strict server-side Gemini key isolation, Helm turns chaotic startup data into clear, execution-ready priorities. Thank you!"*
 
 ---
 

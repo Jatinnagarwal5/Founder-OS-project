@@ -1,15 +1,15 @@
-# FounderOS v2.0 & AutoFlow AI 🚀
+# Helm v2.0 & AutoFlow AI 🚀
 
 > **The AI-Powered Operating System & Workflow Automation Engine for SaaS Founders.**
 
-FounderOS is a production-quality executive operating system that connects financial telemetry (MRR, Burn Rate, Cash Runway, Churn) with **Gemini 2.5 Flash AI**, turning live startup metrics into actionable weekly priorities, trade-off simulations, and autonomous workflow blueprints.
+Helm is a production-quality executive operating system that connects financial telemetry (MRR, Burn Rate, Cash Runway, Churn) with **Gemini 2.5 Flash AI**, turning live startup metrics into actionable weekly priorities, trade-off simulations, and autonomous workflow blueprints.
 
 ---
 
 ## 🎬 Live Demo & Interface Screenshots
 
 ### 📹 Live Operating Demo
-![FounderOS & AutoFlow AI Live Demo](./public/assets/founderos_live_demo.webp)
+![Helm & AutoFlow AI Live Demo](./public/assets/founderos_live_demo.webp)
 
 ### ⚡ AutoFlow AI – Workflow Automation Advisor
 ![AutoFlow AI Suite](./public/assets/autoflow.png)

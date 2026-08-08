@@ -1,4 +1,4 @@
-# 📊 FounderOS v2.0 & AutoFlow AI – 8-Slide Pitch Deck
+# 📊 Helm v2.0 & AutoFlow AI – 8-Slide Pitch Deck
 
 > **Presentation Pitch Deck Content for Hackathon Judging & Offline Presentation**
 
@@ -6,12 +6,12 @@
 
 ## 🖥️ Slide 1: Title & Hook
 
-### **FounderOS v2.0 & AutoFlow AI**
+### **Helm v2.0 & AutoFlow AI**
 #### *The AI Operating System & Workflow Automation Engine for SaaS Founders*
 
 - **Tagline**: Turning raw financial metrics into clear weekly priorities, ROI estimates, and autonomous AI pipelines.
 - **Key Highlight**: Data-grounded startup telemetry powered by **Google Gemini 2.5 Flash**.
-- **Presenter**: FounderOS Engineering Team | Hackathon 2026
+- **Presenter**: Helm Engineering Team | Hackathon 2026
 
 ---
 
@@ -30,7 +30,7 @@
 
 ## 🚀 Slide 3: The Solution
 
-### **FounderOS v2.0 – Data-Grounded AI Weekly Operating Review**
+### **Helm v2.0 – Data-Grounded AI Weekly Operating Review**
 
 - **Step 1: Telemetry Ingestion**: Connect Stripe or upload financial CSVs (Revenue, Expenses, Active/Churned Customers).
 - **Step 2: Data-Grounded AI Diagnostic**: **Gemini 2.5 Flash** analyzes connected metrics and cites actual data (*"MRR grew +14.2% to $42,500 while churn stayed low at 1.8%..."*).
@@ -88,13 +88,13 @@
 
 ## 🎯 Slide 8: Roadmap & Why We Win
 
-### **What's Next & Why FounderOS Deserves Selection for Offline Round**
+### **What's Next & Why Helm Deserves Selection for Offline Round**
 
 - **Upcoming Roadmap**:
   - **Phase 1**: Live 1-click Stripe & QuickBooks API OAuth integrations.
   - **Phase 2**: Autonomous Make.com & Zapier 1-click webhook deployment.
   - **Phase 3**: Enterprise team multi-seat workspaces & permission controls.
-- **Why We Win**: FounderOS solves a real, painful founder problem with a data-grounded AI operating review, real file exports, and a production-quality dark glassmorphic UI built in Next.js 15 and Gemini 2.5 Flash.
+- **Why We Win**: Helm solves a real, painful founder problem with a data-grounded AI operating review, real file exports, and a production-quality dark glassmorphic UI built in Next.js 15 and Gemini 2.5 Flash.
 
 ---
 
@@ -102,4 +102,4 @@
 - *Opening (Slide 1-2)*: Emphasize how much time early-stage founders lose doing manual admin work.
 - *Demo Transition (Slide 3-4)*: Show the live Executive Dashboard and AutoFlow ROI calculator.
 - *Technology Highlight (Slide 6)*: Point out server-side key isolation and Gemini 2.5 Flash integration.
-- *Closing (Slide 8)*: Reiterate why FounderOS is ready to scale to thousands of SaaS founders!
+- *Closing (Slide 8)*: Reiterate why Helm is ready to scale to thousands of SaaS founders!

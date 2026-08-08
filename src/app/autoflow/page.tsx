@@ -21,71 +21,74 @@ import PricingSection from "@/components/autoflow/PricingSection";
 import FAQSection from "@/components/autoflow/FAQSection";
 import FinalCTA from "@/components/autoflow/FinalCTA";
 import AutoFlowFooter from "@/components/autoflow/AutoFlowFooter";
+import { StarsBackground } from "@/components/ui/StarsBackground";
 
 export default function AutoFlowPage() {
   return (
-    <div className="min-h-screen bg-[#09090b] text-[#ffffff] selection:bg-purple-600 selection:text-white flex flex-col justify-between overflow-x-hidden font-sans">
-      {/* 1. Navbar */}
-      <AutoFlowNavbar />
+    <StarsBackground isFixed factor={0.12} speed={40} starColor="#ffffff">
+      <div className="min-h-screen bg-transparent text-[#ffffff] selection:bg-purple-600 selection:text-white flex flex-col justify-between overflow-x-hidden font-sans">
+        {/* 1. Navbar */}
+        <AutoFlowNavbar />
 
-      <main className="flex-1">
-        {/* 2. Hero Section */}
-        <AutoFlowHero />
+        <main className="flex-1">
+          {/* 2. Hero Section */}
+          <AutoFlowHero />
 
-        {/* 3. Trusted By Startups Ticker */}
-        <TrustedLogos />
+          {/* 3. Trusted By Startups Ticker */}
+          <TrustedLogos />
 
-        {/* 4. Problem Statement Section */}
-        <ProblemStatement />
+          {/* 4. Problem Statement Section */}
+          <ProblemStatement />
 
-        {/* 5. How It Works Section */}
-        <HowItWorks />
+          {/* 5. How It Works Section */}
+          <HowItWorks />
 
-        {/* 6. AI Workflow Analysis Section */}
-        <WorkflowAnalyzer />
+          {/* 6. AI Workflow Analysis Section */}
+          <WorkflowAnalyzer />
 
-        {/* 7. ROI Calculator Section */}
-        <ROICalculator />
+          {/* 7. ROI Calculator Section */}
+          <ROICalculator />
 
-        {/* 8. AI Recommendations Section */}
-        <AIRecommendations />
+          {/* 8. AI Recommendations Section */}
+          <AIRecommendations />
 
-        {/* 9. Before vs After Workflow Section */}
-        <BeforeAfterFlow />
+          {/* 9. Before vs After Workflow Section */}
+          <BeforeAfterFlow />
 
-        {/* 10. Automation Opportunity Matrix */}
-        <OpportunityMatrix />
+          {/* 10. Automation Opportunity Matrix */}
+          <OpportunityMatrix />
 
-        {/* 11. AI Dashboard Preview */}
-        <DashboardPreview />
+          {/* 11. AI Dashboard Preview */}
+          <DashboardPreview />
 
-        {/* 12. 10 Feature Grid */}
-        <FeatureGrid />
+          {/* 12. 10 Feature Grid */}
+          <FeatureGrid />
 
-        {/* 13. AI Consultant Chat Section */}
-        <ConsultantChat />
+          {/* 13. AI Consultant Chat Section */}
+          <ConsultantChat />
 
-        {/* 14. Executive Report Preview Section */}
-        <ReportPreview />
+          {/* 14. Executive Report Preview Section */}
+          <ReportPreview />
 
-        {/* 15. Animated Stat Counters */}
-        <StatCounters />
+          {/* 15. Animated Stat Counters */}
+          <StatCounters />
 
-        {/* 16. Customer Testimonials */}
-        <Testimonials />
+          {/* 16. Customer Testimonials */}
+          <Testimonials />
 
-        {/* 17. Pricing Section */}
-        <PricingSection />
+          {/* 17. Pricing Section */}
+          <PricingSection />
 
-        {/* 18. FAQ Accordions */}
-        <FAQSection />
+          {/* 18. FAQ Accordions */}
+          <FAQSection />
 
-        {/* 19. Final CTA */}
-        <FinalCTA />
-      </main>
+          {/* 19. Final CTA */}
+          <FinalCTA />
+        </main>
 
-      {/* 20. Professional Footer */}
-      <AutoFlowFooter />
-    </div>
+        {/* 20. Professional Footer */}
+        <AutoFlowFooter />
+      </div>
+    </StarsBackground>
   );
 }

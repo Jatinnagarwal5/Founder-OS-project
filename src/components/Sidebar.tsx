@@ -142,7 +142,7 @@ export default function Sidebar({ mobileOpen = false, onCloseMobile }: SidebarPr
 
       {/* Footer info */}
       <div className="pt-4 border-t border-white/10 px-3 text-[11px] text-slate-400 flex items-center justify-between">
-        <span>FounderOS v2.5</span>
+        <span>Helm v2.5</span>
         <span className="flex items-center gap-1.5">
           <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
           <span className="text-emerald-400 font-medium">Live Telemetry</span>
