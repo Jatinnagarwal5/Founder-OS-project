@@ -3,11 +3,13 @@
 import React from "react";
 import { Sparkles, Play, ArrowRight, CheckCircle2, Zap, Cpu, Activity, ShieldCheck } from "lucide-react";
 import { motion } from "framer-motion";
+import { StarsBackground } from "@/components/ui/StarsBackground";
 
 export default function AutoFlowHero() {
   return (
-    <section className="relative pt-12 pb-20 overflow-hidden">
-      {/* Floating Ambient Gradient Blobs */}
+    <StarsBackground factor={0.08} speed={40} starColor="#e9d5ff">
+      <section className="relative pt-12 pb-20 overflow-hidden">
+        {/* Floating Ambient Gradient Blobs */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[450px] bg-gradient-to-tr from-purple-600/20 via-blue-600/20 to-emerald-500/10 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute top-1/3 left-10 w-72 h-72 bg-purple-500/10 rounded-full blur-[100px] pointer-events-none" />
 
@@ -171,5 +173,6 @@ export default function AutoFlowHero() {
         </div>
       </div>
     </section>
+  </StarsBackground>
   );
 }
